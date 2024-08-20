@@ -10,9 +10,9 @@ import godrej5 from '../assets/image/godrej5.jpeg';
 
 const MainSection = () => {
   return (
-    <div className="flex flex-col md:flex-row h-[70vh] lg:h-[48vh] md:h-[48vh] custom-lg:h-[54vh] 3xl:h-[47vh]">
-      <div className="w-full md:w-2/6 p-4 flex flex-col justify-center items-center relative bg-white">
-        <div className="relative w-full h-2/3 md:h-full">
+    <div className="flex flex-col md:flex-row h-[70vh] lg:h-[50vh] md:h-[50vh]  custom-lg:h-[54vh] 3xl:h-[47vh] max-3xl:h-[55vh] px-2">
+      <div className="w-full md:w-2/6 flex flex-col justify-center items-center relative bg-white">
+        <div className="relative w-full h-2/3  md:h-[48vh] lg:h-[48vh] custom-lg:h-[52vh] 3xl:h-[46vh]">
           <img 
             src={Image} 
             alt="Explore" 
@@ -23,7 +23,7 @@ const MainSection = () => {
           </button>
         </div>
       </div>
-      <div className="w-full md:w-4/6 p-2">
+      <div className="w-full md:w-4/6 p-1">
         <Carousel 
           showThumbs={false} 
           showStatus={false} 
@@ -32,18 +32,43 @@ const MainSection = () => {
           interval={3000} 
           transitionTime={600}
           emulateTouch={true}
+          swipeable={true} // Enables mouse dragging for slides
         >
-          <div className="grid grid-cols-2 md:grid-cols-2 gap-2">
-            <img src={godrej1} alt="Slide 1" className="w-full h-[40vh] md:h-[47vh] lg:h-[47vh] custom-lg:h-[52vh] object-cover shadow-gray-200 shadow-lg" />
-            <img src={godrej2} alt="Slide 2" className="w-full h-[40vh] md:h-[47vh] lg:h-[47vh] custom-lg:h-[52vh] object-cover shadow-gray-200 shadow-lg" />
+          <div className="grid grid-cols-2 md:grid-cols-2 gap-2  mt-[vh] ">
+            <img 
+              src={godrej1} 
+              alt="Slide 1" 
+              className="w-full h-[40vh] md:h-[47vh] lg:h-[48vh] custom-lg:h-[52vh] 3xl:h-[46vh] max-3xl:h-[55vh] object-cover shadow-gray-200 shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl"
+            />
+            <img 
+              src={godrej2} 
+              alt="Slide 2" 
+              className="w-full h-[40vh] md:h-[47vh] lg:h-[48vh] custom-lg:h-[52vh] 3xl:h-[46vh] max-3xl:h-[55vh] object-cover shadow-gray-200 shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl"
+            />
           </div>
           <div className="grid grid-cols-2 md:grid-cols-2 gap-2">
-            <img src={godrej3} alt="Slide 3" className="w-full h-[40vh] md:h-[47vh] lg:h-[47vh] custom-lg:h-[52vh] object-cover shadow-gray-200 shadow-lg" />
-            <img src={godrej4} alt="Slide 4" className="w-full h-[40vh] md:h-[47vh] lg:h-[47vh] custom-lg:h-[52vh] object-cover shadow-gray-200 shadow-lg" />
+            <img 
+              src={godrej3} 
+              alt="Slide 3" 
+              className="w-full h-[40vh] md:h-[47vh] lg:h-[48vh] custom-lg:h-[52vh] 3xl:h-[46vh] max-3xl:h-[55vh] object-cover shadow-gray-200 shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl"
+            />
+            <img 
+              src={godrej4} 
+              alt="Slide 4" 
+              className="w-full h-[40vh] md:h-[47vh] lg:h-[48vh] custom-lg:h-[52vh] 3xl:h-[46vh] max-3xl:h-[55vh] object-cover shadow-gray-200 shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl"
+            />
           </div>
           <div className="grid grid-cols-2 md:grid-cols-2 gap-2">
-            <img src={godrej5} alt="Slide 5" className="w-full h-[40vh] md:h-[47vh] lg:h-[47vh] custom-lg:h-[52vh] object-cover shadow-gray-200 shadow-lg" />
-            <img src={godrej2} alt="Slide 6" className="w-full h-[40vh] md:h-[47vh] lg:h-[47vh] custom-lg:h-[52vh] object-cover shadow-gray-200 shadow-lg" />
+            <img 
+              src={godrej5} 
+              alt="Slide 5" 
+              className="w-full h-[40vh] md:h-[47vh] lg:h-[48vh] custom-lg:h-[52vh] 3xl:h-[46vh] max-3xl:h-[55vh] object-cover shadow-gray-200 shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl"
+            />
+            <img 
+              src={godrej2} 
+              alt="Slide 6" 
+              className="w-full h-[40vh] md:h-[47vh] lg:h-[48vh] custom-lg:h-[52vh] 3xl:h-[46vh] max-3xl:h-[55vh] object-cover shadow-gray-200 shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl"
+            />
           </div>
         </Carousel>
       </div>
