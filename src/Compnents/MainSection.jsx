@@ -8,6 +8,8 @@ import godrej3 from '../assets/image/godrej3.jpeg';
 import godrej4 from '../assets/image/godrej4.jpeg';
 import godrej5 from '../assets/image/godrej5.jpeg';
 
+
+
 const MainSection = () => {
   return (
     <div className="flex flex-col md:flex-row h-[70vh] lg:h-[48vh] md:h-[48vh] custom-lg:h-[54vh] 3xl:h-[47vh]">
