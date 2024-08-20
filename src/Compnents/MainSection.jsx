@@ -16,7 +16,7 @@ const MainSection = () => {
           <img 
             src={Image} 
             alt="Explore" 
-            className="w-full h-full object-cover shadow-lg" 
+            className="w-full h-full object-cover object-top shadow-lg" 
           />
           <button className="absolute bottom-4 left-1/2 transform -translate-x-1/2 px-4 md:px-6 py-2 md:py-1 border-2 border-white text-white rounded-md shadow-md hover:bg-gray-700 transition duration-300 ease-in-out">
             Explore
