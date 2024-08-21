@@ -10,7 +10,7 @@ import godrej5 from '../assets/image/godrej5.jpeg';
 
 const MainSection = () => {
   return (
-    <div className="flex flex-col md:flex-row h-[70vh] lg:h-[50vh] md:h-[50vh]  custom-lg:h-[54vh] xl:h-[68vh]  3xl:h-[48vh] max-3xl:h-[55vh] px-2">
+    <div className="flex flex-col md:flex-row h-[70vh] lg:h-[50vh] md:h-[50vh]  custom-lg:h-[54vh] xl:h-[68vh]  3xl:h-[48vh] max-3xl:h-[55vh] px-2 pb-11">
       <div className="w-full md:w-2/6 flex flex-col justify-center items-center relative bg-white">
         <div className="relative w-full h-[58vh] sm:h-[72vh]  md:h-[47vh] md:mt-[-2vh] lg:h-[48vh] lg:mt-[-2vh] custom-lg:h-[52vh] custom-lg:mt-[-2vh] xl:h-[64vh] 2xl:[55vh] 3xl:h-[46vh] 3xl:mt-[-2vh] ">
           <img 
